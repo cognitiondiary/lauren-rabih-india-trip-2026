@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India — May 16–24 | Your Full-Spectrum Journey</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron: #FF9933;
+    --deep-teal: #0D5C6B;
+    --magenta: #C2185B;
+    --marigold: #F5A623;
+    --royal-purple: #4A148C;
+    --ivory: #FDF6EC;
+    --charcoal: #111111;
+    --gold: #C9A84C;
+    --light-saffron: #FFF3E0;
+    --light-teal: #E0F4F7;
+    --rose: #F8D7DA;
+    --parchment: #FAF0DC;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--ivory);
+    color: var(--charcoal);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(160deg, rgba(13,92,107,0.82) 0%, rgba(74,20,140,0.72) 40%, rgba(194,24,91,0.68) 100%),
+      url('https://source.unsplash.com/1800x1000/?india,palace,rajasthan') center/cover no-repeat;
+    z-index: 0;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 60px,
+      rgba(255,153,51,0.04) 60px,
+      rgba(255,153,51,0.04) 61px
+    );
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    max-width: 900px;
+  }
+
+  .hero-flag {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .hero-eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--marigold);
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 7vw, 6rem);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.05;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 4px 30px rgba(0,0,0,0.4);
+  }
+
+  .hero-title span {
+    color: var(--saffron);
+    font-style: italic;
+  }
+
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: rgba(255,255,255,0.88);
+    font-style: italic;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .hero-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+  }
+
+  .pill {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    padding: 0.4rem 1.2rem;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(8px);
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .scroll-arrow {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent);
+    animation: scrollDown 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollDown {
+    0% { transform: scaleY(0); transform-origin: top; }
+    50% { transform: scaleY(1); transform-origin: top; }
+    51% { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+
+  /* ── INTRO CALLOUT ── */
+  .intro-section {
+    background: var(--deep-teal);
+    padding: 5rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .intro-section::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--saffron), var(--magenta), var(--saffron));
+  }
+
+  .intro-section::after {
+    content: '॥';
+    position: absolute;
+    font-size: 20rem;
+    color: rgba(255,255,255,0.03);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: serif;
+    pointer-events: none;
+  }
+
+  .intro-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .intro-inner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+
+  .intro-inner p {
+    color: rgba(255,255,255,0.92);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--saffron);
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    margin-top: 0.3rem;
+  }
+
+  /* ── FOOD CALLOUT ── */
+  .food-callout {
+    background: linear-gradient(135deg, var(--light-saffron), var(--parchment));
+    border-left: 5px solid var(--saffron);
+    border-radius: 0 12px 12px 0;
+    padding: 2rem 2.5rem;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    box-shadow: 0 4px 30px rgba(255,153,51,0.12);
+  }
+
+  .food-callout h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--saffron);
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .food-callout p {
+    color: #111;
+    font-size: 0.97rem;
+    line-height: 1.8;
+    font-weight: 500;
+  }
+
+  .food-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .food-tag {
+    background: var(--saffron);
+    color: #fff;
+    padding: 0.3rem 0.9rem;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .food-tag.teal { background: var(--deep-teal); }
+  .food-tag.magenta { background: var(--magenta); }
+
+  /* ── MAIN CONTENT ── */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  /* ── SECTION HEADER ── */
+  .city-header {
+    text-align: center;
+    padding: 5rem 2rem 2rem;
+    position: relative;
+  }
+
+  .city-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--magenta);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+  }
+
+  .city-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--deep-teal);
+    font-weight: 900;
+  }
+
+  .city-divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--saffron), var(--magenta));
+    margin: 1.2rem auto;
+    border-radius: 2px;
+  }
+
+  /* ── DAY CARDS ── */
+  .day-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .day-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 60px rgba(0,0,0,0.12);
+  }
+
+
+  .day-body {
+    padding: 2.5rem;
+  }
+
+  .day-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--light-saffron);
+    border: 1px solid var(--saffron);
+    color: var(--saffron);
+    padding: 0.3rem 0.9rem;
+    border-radius: 100px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .day-badge.teal {
+    background: var(--light-teal);
+    border-color: var(--deep-teal);
+    color: var(--deep-teal);
+  }
+
+  .day-badge.magenta {
+    background: var(--rose);
+    border-color: var(--magenta);
+    color: var(--magenta);
+  }
+
+  .day-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--charcoal);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .day-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--magenta);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+  .day-desc {
+    color: #111;
+    font-size: 1rem;
+    line-height: 1.85;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .activity-chip {
+    background: var(--ivory);
+    border: 1px solid #E8E0D0;
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    color: var(--charcoal);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .activity-chip:hover {
+    background: var(--light-saffron);
+    border-color: var(--saffron);
+  }
+
+  .activity-chip .chip-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  /* Dinner highlight */
+  .dinner-highlight {
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, rgba(74,20,140,0.07), rgba(194,24,91,0.07));
+    border-left: 4px solid var(--magenta);
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .dinner-highlight span {
+    font-size: 1.2rem;
+  }
+
+  .dinner-highlight p {
+    font-size: 0.95rem;
+    color: #111;
+    font-weight: 500;
+  }
+
+  .dinner-highlight strong {
+    color: var(--magenta);
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+  }
+
+  /* ── TRAVEL CONNECTOR ── */
+  .travel-connector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(90deg, var(--deep-teal), var(--royal-purple));
+    border-radius: 14px;
+    margin-bottom: 3rem;
+    color: #fff;
+  }
+
+  .travel-connector .icon { font-size: 1.8rem; }
+
+  .travel-connector p {
+    font-size: 0.88rem;
+    opacity: 0.9;
+    font-weight: 300;
+  }
+
+  .travel-connector strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  /* ── WHAT THIS TRIP REALLY IS ── */
+  .trip-essence {
+    background: linear-gradient(160deg, var(--deep-teal) 0%, var(--royal-purple) 100%);
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .trip-essence::before {
+    content: '🇮🇳';
+    position: absolute;
+    font-size: 18rem;
+    opacity: 0.04;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+  }
+
+  .trip-essence h2 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+  }
+
+  .trip-essence .subtitle {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .essence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .essence-item {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 14px;
+    padding: 1.2rem;
+    backdrop-filter: blur(10px);
+    transition: background 0.3s;
+  }
+
+  .essence-item:hover {
+    background: rgba(255,255,255,0.18);
+  }
+
+  .essence-item .ei-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+  .essence-item p {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .final-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    color: rgba(255,255,255,0.9);
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+  }
+
+  .final-line strong {
+    color: var(--saffron);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--charcoal);
+    text-align: center;
+    padding: 2rem;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+
+  footer span { color: var(--saffron); }
+
+  /* ── DECORATIVE DIVIDER ── */
+  .ornament {
+    text-align: center;
+    color: var(--saffron);
+    font-size: 1.2rem;
+    letter-spacing: 0.5em;
+    margin: 1rem 0 2rem;
+    opacity: 0.6;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .stats-row { gap: 1.5rem; }
+    .day-body { padding: 1.5rem; }
+    .activities-grid { grid-template-columns: 1fr 1fr; }
+    .travel-connector { flex-direction: column; text-align: center; }
+  }
+
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeIn 0.7s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .day-card:nth-child(1) { animation-delay: 0.1s; }
+  .day-card:nth-child(2) { animation-delay: 0.2s; }
+  .day-card:nth-child(3) { animation-delay: 0.3s; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-flag">🇮🇳</span>
+    <p class="hero-eyebrow">Your first time in India · May 16 – 24, 2025</p>
+    <h1 class="hero-title">This Isn't a Trip.<br><span>It's India.</span></h1>
+    <p class="hero-subtitle">8 days. Memories that won't quit.<br>Zero dull moments.</p>
+    <div class="hero-pills">
+      <span class="pill">🏙️ Mumbai</span>
+      <span class="pill">🏰 Udaipur</span>
+      <span class="pill">🛕 Temples</span>
+      <span class="pill">🍽️ Fine Dining</span>
+      <span class="pill">🐪 Camel Rides</span>
+      <span class="pill">🚂 Local Trains</span>
+      <span class="pill">🏘️ Villages & Bazaars</span>
+      <span class="pill">🖌️ Art & Craft</span>
+      <span class="pill">🏛️ Heritage Walks</span>
+      <span class="pill">🏺 Traditional Pottery</span>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ INTRO ═══════════════════════════════ -->
+<section class="intro-section">
+  <div class="intro-inner">
+    <h2>Your Full-Spectrum Introduction to India</h2>
+    <p>The real, layered, beautiful, chaotic, luxurious, spiritual, high-energy version of it. We're not doing the tourist pamphlet version. We're doing <em>all</em> of it — from local trains to palace hotels, from street bazaars to crystal galleries, from Master Chef cooking experiences to dinners with family that will make your own seem delightfully calm.</p>
+    <div class="stats-row">
+      <div class="stat">
+        <span class="stat-number">8</span>
+        <span class="stat-label">Days</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">∞</span>
+        <span class="stat-label">Memories</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">0</span>
+        <span class="stat-label">Dull Moments</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOD PLAN ═══════════════════════════════ -->
+<div style="padding: 4rem 2rem 0; background: var(--ivory);">
+  <div class="container">
+    <div class="food-callout">
+      <h3>🍴 The Food Plan</h3>
+      <p>I've put together a curated lineup of restaurants for lunch and dinner across both cities. Rather than lock us into a rigid schedule, we'll pick dynamically based on how the day is flowing, your energy levels, and what you're craving. You're getting the full spread — street soul to fine-dining royalty.</p>
+      <div class="food-tags">
+        <span class="food-tag">🌿 Traditional & Rooted</span>
+        <span class="food-tag teal">🍜 Everyday Local Favorites</span>
+        <span class="food-tag magenta">✨ Luxurious Fine Dining</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ MUMBAI HEADER ═══════════════════════════════ -->
+<div class="city-header">
+  <p class="city-eyebrow">Chapter One</p>
+  <h2 class="city-title">Mumbai, the City of Dreams</h2>
+  <div class="city-divider"></div>
+  <p style="color:#444; font-size:0.9rem; max-width:500px; margin:0 auto; line-height:1.7;">May 16 – 19 · The heartbeat of India. Chaotic, beautiful, endlessly alive.</p>
+</div>
+
+<div class="container">
+
+  <!-- DAY 1 -->
+  <div class="day-card fade-in">
+    <div class="day-body">
+      <div class="day-badge">✈️ May 16</div>
+      <h3 class="day-title">Welcome to Mumbai</h3>
+      <p class="day-tagline">Your first "wow, I'm really in India" moment.</p>
+      <p class="day-desc">Land at 11:30 AM. By 2 PM, you'll be checked into the <strong>St. Regis</strong> — one of Mumbai's finest. Take a breath, freshen up, let it sink in that you're actually here. Then we step straight into the heartbeat of the city.</p>
+      <p class="day-desc">As evening sets in, we head to iconic <strong>Marine Drive</strong> — a sweeping arc along the Arabian Sea that locals call the Queen's Necklace. Sea breeze, skyline, energy, golden hour. This is your first taste of India, and it does not disappoint.</p>
+      <div class="activities-grid">
+        <div class="activity-chip"><span class="chip-icon">🛬</span> Land 11:30 AM</div>
+        <div class="activity-chip"><span class="chip-icon">🏨</span> St. Regis Check-in</div>
+        <div class="activity-chip"><span class="chip-icon">🌊</span> Marine Drive</div>
+        <div class="activity-chip"><span class="chip-icon">👨‍👩‍👧‍👦</span> Extended Family Dinner</div>
+      </div>
+      <div class="dinner-highlight">
+        <span>🍽️</span>
+        <p>Dinner is with extended family. Brace yourselves — by the end of the night you'll feel deeply loved… and very reassured that your own family is <em>perfectly normal</em>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-card fade-in">
+    <div class="day-body">
+      <div class="day-badge teal">🏛️ May 17</div>
+      <h3 class="day-title">Iconic Mumbai & Culture</h3>
+      <p class="day-tagline">Colonial history, modern India, fashion, art, performance.</p>
+      <p class="day-desc">Breakfast done. Out by 10 AM. We move with purpose through some of Mumbai's most iconic landmarks, then explore the city's creative and cultural heartbeat. You'll start seeing the layers — colonial grandeur, artisan craftsmanship, modern India all at once.</p>
+      <div class="activities-grid">
+        <div class="activity-chip"><span class="chip-icon">🏛️</span> Gateway of India</div>
+        <div class="activity-chip"><span class="chip-icon">📍</span> Iconic Mumbai Spots</div>
+        <div class="activity-chip"><span class="chip-icon">🛍️</span> Swadeshi Boutiques</div>
+        <div class="activity-chip"><span class="chip-icon">🎭</span> Cultural Performance</div>
+      </div>
+      <div class="dinner-highlight">
+        <span>💡</span>
+        <p>The Swadeshi boutique tour is fair warning: you'll find things you "weren't planning" to buy. That's fine. That's India.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-card fade-in">
+    <div class="day-body">
+      <div class="day-badge magenta">🚂 May 18</div>
+      <h3 class="day-title">Real India Experience</h3>
+      <p class="day-tagline">Today isn't polished. It's real. And it's extraordinary.</p>
+      <p class="day-desc">This is the day I'm most excited about for you all. We stop being tourists and start living like Mumbaikars — even if just for a day. You'll see how India actually runs: its schools, its railways, its malls, its colleges. It tells you everything about who we are as a country.</p>
+      <p class="day-desc">The evening elevates: an intimate <strong>cooking experience with a Master Chef</strong> — not just eating Indian food, but understanding it.</p>
+      <div class="activities-grid">
+        <div class="activity-chip"><span class="chip-icon">🚂</span> Local Trains</div>
+        <div class="activity-chip"><span class="chip-icon">🛺</span> Rickshaws</div>
+        <div class="activity-chip"><span class="chip-icon">🏫</span> Typical School</div>
+        <div class="activity-chip"><span class="chip-icon">🏛️</span> Engineering College</div>
+        <div class="activity-chip"><span class="chip-icon">🛒</span> Local Mall</div>
+        <div class="activity-chip"><span class="chip-icon">👨‍🍳</span> Master Chef Cooking</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRAVEL CONNECTOR -->
+  <div class="travel-connector">
+    <div class="icon">✈️</div>
+    <div>
+      <strong>May 19 — Mumbai → Udaipur</strong>
+      <p>Check out at 10:30 AM. Fun traditional clothes shopping (this is non-negotiable). Airport around 4 PM. By 7 PM we land in Udaipur — and everything changes.</p>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<!-- ═══════════════════════════════ UDAIPUR HEADER ═══════════════════════════════ -->
+<div class="city-header" style="background: linear-gradient(180deg, var(--ivory) 0%, #FEF6E7 100%);">
+  <p class="city-eyebrow">Chapter Two</p>
+  <h2 class="city-title" style="color: var(--magenta);">Udaipur, Where History Lives</h2>
+  <div class="city-divider"></div>
+  <p style="color:#444; font-size:0.9rem; max-width:500px; margin:0 auto; line-height:1.7;">May 19 – 22 · Rajasthan at its most regal. Palaces, temples, craft, and views that don't look real.</p>
+</div>
+
+<div class="container">
+
+  <!-- DAY 4 – UDAIPUR ARRIVAL -->
+  <div class="day-card fade-in">
+    <div class="day-body">
+      <div class="day-badge magenta">🏰 May 19</div>
+      <h3 class="day-title">Arrival in Royal Udaipur</h3>
+      <p class="day-tagline">You'll feel like royalty within 10 minutes. I promise.</p>
+      <p class="day-desc">We land around 7 PM and check into <a href="https://www.oberoihotels.com/hotels-in-udaipur-udaivilas-resort/" target="_blank" style="color: var(--magenta); text-decoration:none; font-weight:600;">The Oberoi Udaivilas</a> — consistently ranked among the best hotels in the <em>world</em>. Intricate Gujarati courtyards, Lake Pichola views, and service that makes you forget what day it is. Step outside and wonder if you accidentally walked into a painting.</p>
+      <div class="activities-grid">
+        <div class="activity-chip"><span class="chip-icon">👗</span> Traditional Clothes Shopping</div>
+        <div class="activity-chip"><span class="chip-icon">✈️</span> Mumbai → Udaipur</div>
+        <div class="activity-chip"><span class="chip-icon">🏰</span> Oberoi Udaivilas Check-in</div>
+        <div class="activity-chip"><span class="chip-icon">🌅</span> Lake Pichola Views</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-card fade-in">
+    <div class="day-body">
+      <div class="day-badge magenta">🛕 May 20</div>
+      <h3 class="day-title">Spiritual & Regal Rajasthan</h3>
+      <p class="day-tagline">Spiritual, rustic, cinematic. All in one day.</p>
+      <p class="day-desc">We venture to <strong>Nathdwara</strong> for the sacred <strong>Shreenathji Temple</strong> — one of the most important Vaishnava shrines in India, visually stunning and deeply moving even if you've never been religious. We return through village bazaars, raw and full of colour, before ascending to <strong>Sajjangarh Fort (Monsoon Palace)</strong> — a white marble palace perched on the Aravalli hills with views that will genuinely ruin sunsets back home for you.</p>
+      <div class="activities-grid">
+        <div class="activity-chip"><span class="chip-icon">🛕</span> Shreenathji Temple, Nathdwara</div>
+        <div class="activity-chip"><span class="chip-icon">🏘️</span> Village Exploration</div>
+        <div class="activity-chip"><span class="chip-icon">🛒</span> Bazaar Wander</div>
+        <div class="activity-chip"><span class="chip-icon">🏰</span> Sajjangarh Fort</div>
+      </div>
+      <div class="dinner-highlight">
+        <span>🍴</span>
+        <p>Dinner tonight at <strong>Chandni</strong> — a beautiful close to a cinematic day.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day-card fade-in">
+    <div class="day-body">
+      <div class="day-badge magenta">👑 May 21</div>
+      <h3 class="day-title">Royal Immersion</h3>
+      <p class="day-tagline">History. Craft. Architecture. Details you won't see anywhere else.</p>
+      <p class="day-desc">A full day inside Udaipur's crown jewels. We begin at the peaceful <strong>Jagdish Temple</strong>, then move through the magnificent <strong>City Palace</strong> — a labyrinth of courtyards, towers, and ornate chambers built over centuries. The <strong>Crystal Gallery</strong> houses one of the world's largest private crystal collections. Then we get hands-on: a <strong>Miniature Painting School</strong> where centuries-old traditions are still passed down, and a <strong>Traditional Thekri Workshop</strong> where mirrored mosaic art comes alive in your hands.</p>
+      <div class="activities-grid">
+        <div class="activity-chip"><span class="chip-icon">🛕</span> Jagdish Temple</div>
+        <div class="activity-chip"><span class="chip-icon">🏰</span> City Palace</div>
+        <div class="activity-chip"><span class="chip-icon">💎</span> Crystal Gallery</div>
+        <div class="activity-chip"><span class="chip-icon">🖌️</span> Miniature Painting School</div>
+        <div class="activity-chip"><span class="chip-icon">🪞</span> Thekri Workshop</div>
+      </div>
+      <div class="dinner-highlight">
+        <span>🍴</span>
+        <p>Dinner at <strong>Sheeshmahal</strong> — the Hall of Mirrors. If the name tells you anything, it's that the ambience will match everything you've seen today.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="day-card fade-in">
+    <div class="day-body">
+      <div class="day-badge teal">🐪 May 22</div>
+      <h3 class="day-title">Heritage, Clay & Camels → Back to Mumbai</h3>
+      <p class="day-tagline">A poetic Rajasthan farewell, then homeward.</p>
+      <p class="day-desc">A beautiful morning — a <strong>Heritage Walk</strong> through Udaipur's storied lanes, then <strong>Play with Clay</strong> (yes, hands in the earth, proper traditional pottery), and of course, a <strong>Camel Ride</strong>, because Rajasthan demands it.</p>
+      <p class="day-desc">We leave for the airport at 4 PM, land in Mumbai around 8 PM, and check into the <strong>JW Marriott Sahar</strong> — a 5-minute walk to the international airport. This is entirely intentional. Departure day becomes stress-free.</p>
+      <div class="activities-grid">
+        <div class="activity-chip"><span class="chip-icon">🚶</span> Heritage Walk</div>
+        <div class="activity-chip"><span class="chip-icon">🏺</span> Play with Clay</div>
+        <div class="activity-chip"><span class="chip-icon">🐪</span> Camel Ride</div>
+        <div class="activity-chip"><span class="chip-icon">✈️</span> Udaipur → Mumbai 4 PM</div>
+        <div class="activity-chip"><span class="chip-icon">🏨</span> JW Marriott Sahar</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<!-- ═══════════════════════════════ FINAL MUMBAI ═══════════════════════════════ -->
+<div class="city-header">
+  <p class="city-eyebrow">Finale</p>
+  <h2 class="city-title">One Last Day of Mumbai Magic</h2>
+  <div class="city-divider"></div>
+</div>
+
+<div class="container">
+
+  <!-- DAY 8 -->
+  <div class="day-card fade-in">
+    <div class="day-body">
+      <div class="day-badge">🙏 May 23</div>
+      <h3 class="day-title">Blessings, Business & Goodbyes</h3>
+      <p class="day-tagline">Last chance to soak it in. We're using every minute.</p>
+      <p class="day-desc">Step out around 10 AM for a meaningful final day. We start at <strong>Siddhivinayak Temple</strong> — one of Mumbai's most beloved landmarks dedicated to Lord Ganesha. A visit here feels like a proper farewell blessing for your journey home.</p>
+      <p class="day-desc">Then a visit to <strong>our office and factory</strong> — a window into what we actually do here. After that, the <strong>Financial District</strong>, a few neighbourhoods, and anything we felt we missed from earlier in the week. Goal is to be back at the hotel by 8 PM, bags packed, hearts full.</p>
+      <div class="activities-grid">
+        <div class="activity-chip"><span class="chip-icon">🛕</span> Siddhivinayak Temple</div>
+        <div class="activity-chip"><span class="chip-icon">🏭</span> Our Office & Factory</div>
+        <div class="activity-chip"><span class="chip-icon">🏙️</span> Financial District</div>
+        <div class="activity-chip"><span class="chip-icon">🗺️</span> Anything We Missed</div>
+        <div class="activity-chip"><span class="chip-icon">🏨</span> Back by 8 PM</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 9 -->
+  <div class="day-card fade-in" style="background: linear-gradient(135deg, var(--charcoal), #3D3D3D); color: #fff;">
+    <div class="day-body">
+      <div class="day-badge" style="background: rgba(255,153,51,0.2); border-color: var(--saffron); color: var(--saffron);">✈️ May 24</div>
+      <h3 class="day-title" style="color: #fff;">Early Morning Departure</h3>
+      <p class="day-tagline" style="color: var(--saffron);">Simple departure — with way too many memories.</p>
+      <p class="day-desc" style="color: rgba(255,255,255,0.75);">The JW Marriott Sahar is a 5-minute walk to the international terminal. Smooth, easy, stress-free. The trip ends here — but honestly? India doesn't leave you. It stays. And it'll keep pulling you back.</p>
+      <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <span class="pill" style="background: rgba(255,153,51,0.2); border-color: rgba(255,153,51,0.4);">💔 Heavy Heart is Expected</span>
+        <span class="pill" style="background: rgba(255,153,51,0.2); border-color: rgba(255,153,51,0.4);">📸 Way too many photos</span>
+        <span class="pill" style="background: rgba(255,153,51,0.2); border-color: rgba(255,153,51,0.4);">🧠 Rewired brains</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<!-- ═══════════════════════════════ TRIP ESSENCE ═══════════════════════════════ -->
+<section class="trip-essence">
+  <h2>What This Trip Really Is</h2>
+  <p class="subtitle">You're not just sightseeing</p>
+  <div class="essence-grid">
+    <div class="essence-item">
+      <div class="ei-icon">🚂</div>
+      <p>Experiencing Real Daily India</p>
+    </div>
+    <div class="essence-item">
+      <div class="ei-icon">🙏</div>
+      <p>Seeing Spiritual Depth</p>
+    </div>
+
+    <div class="essence-item">
+      <div class="ei-icon">👨‍👩‍👧‍👦</div>
+      <p>Meeting the Family</p>
+    </div>
+    <div class="essence-item">
+      <div class="ei-icon">🍽️</div>
+      <p>Eating Like Kings</p>
+    </div>
+    <div class="essence-item">
+      <div class="ei-icon">🌀</div>
+      <p>Riding Beautiful Chaos</p>
+    </div>
+    <div class="essence-item">
+      <div class="ei-icon">🏰</div>
+      <p>World-Class Luxury</p>
+    </div>
+    <div class="essence-item">
+      <div class="ei-icon">❤️</div>
+      <p>Making It Personal</p>
+    </div>
+  </div>
+  <p class="final-line">By the end of this, India won't feel like a country you visited.<br>It'll feel <strong>personal</strong>.</p>
+</section>
+
+<footer>
+  <p>Crafted with love 🇮🇳 &nbsp;·&nbsp; <span>India: May 16 – 24</span> &nbsp;·&nbsp; Mumbai & Udaipur</p>
+</footer>
+
+</body>
+</html>
